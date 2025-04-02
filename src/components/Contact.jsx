@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import telegramQR from '../assets/telegram_qr.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,19 +9,6 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Здесь можно добавить логику отправки формы
-    console.log('Form submitted:', formData);
-  };
-
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -28,56 +16,26 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <div className="contact-item">
-              <h3>Email</h3>
-              <p>example@email.com</p>
-            </div>
-            <div className="contact-item">
-              <h3>Телефон</h3>
-              <p>+7 (XXX) XXX-XX-XX</p>
+              <h3>Gmail</h3>
+              <a href="mailto:plekhanov.pavel.job@gmail.com" className="email-link">plekhanov.pavel.job@gmail.com</a>
             </div>
             <div className="contact-item">
               <h3>Социальные сети</h3>
               <div className="social-links">
-                <a href="#" className="social-link">GitHub</a>
-                <a href="#" className="social-link">LinkedIn</a>
-                <a href="#" className="social-link">Telegram</a>
+                <a href="https://github.com/Pauolosavery" className="social-link">GitHub</a>
+                <a href="https://tenchat.ru/pavel_plekhanov" className="social-link">TenChat</a>
+                <a href="https://t.me/pavel_trader" className="social-link">Telegram</a>
+              </div>
+            </div>
+            <div className="contact-item">
+              <h3>Telegram</h3>
+              <div className="telegram-qr">
+                <a href="https://t.me/pavel_trader" target="_blank" rel="noopener noreferrer">
+                  <img src={telegramQR} alt="Telegram QR Code" />
+                </a>
               </div>
             </div>
           </div>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Ваше имя"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Ваш email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                placeholder="Ваше сообщение"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Отправить сообщение
-            </button>
-          </form>
         </div>
       </div>
     </section>
