@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
-import telegramQR from '../assets/telegram_qr.png';
+import telegramQR from '../assets/telegram_qr.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,13 +24,13 @@ const Contact = () => {
               <div className="social-links">
                 <a href="https://github.com/Pauolosavery" className="social-link">GitHub</a>
                 <a href="https://tenchat.ru/pavel_plekhanov" className="social-link">TenChat</a>
-                <a href="https://t.me/pavel_trader" className="social-link">Telegram</a>
+                <a href="https://t.me/pavel_programmist" className="social-link">Telegram</a>
               </div>
             </div>
             <div className="contact-item">
               <h3>Telegram</h3>
               <div className="telegram-qr">
-                <a href="https://t.me/pavel_trader" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/pavel_programmist" target="_blank" rel="noopener noreferrer">
                   <img src={telegramQR} alt="Telegram QR Code" />
                 </a>
               </div>

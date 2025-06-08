@@ -43,6 +43,7 @@
 .telegram-qr a {
   display: inline-block;
   transition: transform 0.3s ease;
+  background-color: #fff;
 }
 
 .telegram-qr a:hover {
