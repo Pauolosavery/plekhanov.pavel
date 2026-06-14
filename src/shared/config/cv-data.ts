@@ -1,21 +1,21 @@
 export const cvData = {
   personal: {
-    name: 'Плеханов Дмитрий',
+    name: 'Плеханов Павел',
     role: 'Frontend Developer',
     tagline: 'Создаю быстрые, красивые и удобные веб-приложения',
-    email: 'plekhanov.dev@gmail.com',
-    phone: '+7 (999) 123-45-67',
-    location: 'Москва, Россия',
-    github: 'https://github.com/plekhanov-dev',
+    email: 'pavel.plekhanov.job@gmail.com',
+    phone: '+7 (981) 766-14-78',
+    location: 'СПб, Россия',
+    github: 'https://github.com/Pauolosavery',
     linkedin: 'https://linkedin.com/in/plekhanov-dev',
-    telegram: 'https://t.me/plekhanov_dev',
-    avatarInitials: 'ДП',
-    yearsOfExperience: 4,
-    projectsCount: 30,
+    telegram: 'https://t.me/pavel_programmist',
+    avatarInitials: 'ПП',
+    yearsOfExperience: 5,
+    projectsCount: 10,
     companiesCount: 3,
   },
 
-  about: `Frontend-разработчик с 4+ годами опыта создания высоконагруженных веб-приложений.
+  about: `Frontend-разработчик с 5 годами опыта создания высоконагруженных веб-приложений.
 Специализируюсь на React-экосистеме, уделяю особое внимание производительности, доступности и качеству кода.
 Люблю чистую архитектуру и делюсь знаниями с командой через код-ревью и внутренние митапы.`,
 
